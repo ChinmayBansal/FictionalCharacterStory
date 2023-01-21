@@ -15,5 +15,13 @@ class ViewController: UIViewController {
     }
 
 
+    
+    @IBAction func didTapped(_ sender: UITapGestureRecognizer) {
+        if let tappedView = sender.view {
+            performSegue(withIdentifier: "detailSegue", sender: tappedView)
+        }
+    }
+    
+    
 }
 

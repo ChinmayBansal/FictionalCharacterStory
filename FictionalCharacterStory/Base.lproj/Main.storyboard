@@ -26,14 +26,27 @@
                                                 <rect key="frame" x="16" y="16" width="313" height="304.66666666666669"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" image="ProfilePicture" translatesAutoresizingMaskIntoConstraints="NO" id="bPF-7w-Pfv">
-                                                        <rect key="frame" x="0.0" y="0.0" width="313" height="149.33333333333334"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="313" height="135.33333333333334"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Enemies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gzp-Qh-zsr">
-                                                        <rect key="frame" x="0.0" y="278.33333333333331" width="313" height="26.333333333333314"/>
-                                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="26"/>
-                                                        <color key="textColor" systemColor="systemOrangeColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a87-rI-e4G">
+                                                        <rect key="frame" x="0.0" y="264.33333333333331" width="313" height="40.333333333333314"/>
+                                                        <gestureRecognizers/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="Enemies">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="26" name="Copperplate"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="ggz-iC-msK" appends="YES" id="h9W-p0-SfR"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
@@ -51,20 +64,48 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="4Pk-Gm-cio">
                                                 <rect key="frame" x="16" y="16" width="313" height="304.33333333333331"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Backstory" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Otj-Qn-NME">
-                                                        <rect key="frame" x="0.0" y="0.0" width="313" height="26.333333333333332"/>
-                                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="26"/>
-                                                        <color key="textColor" systemColor="systemOrangeColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Gadgets" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlk-UM-qMX">
-                                                        <rect key="frame" x="0.0" y="79.333333333333314" width="313" height="26.333333333333329"/>
-                                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="26"/>
-                                                        <color key="textColor" systemColor="systemOrangeColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XxU-q4-Vmx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="313" height="40.333333333333336"/>
+                                                        <gestureRecognizers/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="Backstory">
+                                                                    <attributes>
+                                                                        <color key="NSBackgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="NSColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <font key="NSFont" size="26" name="Copperplate"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="NWl-c6-Cdz" appends="YES" id="0Bp-fG-kpr"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HcA-UL-7t4">
+                                                        <rect key="frame" x="0.0" y="93.333333333333314" width="313" height="40.333333333333343"/>
+                                                        <gestureRecognizers/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="My Gadgets">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="26" name="Copperplate"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <color key="baseForegroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="QZH-PR-uoS" appends="YES" id="Bea-OX-Rw6"/>
+                                                        </connections>
+                                                    </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="iVF-1b-Yz5">
-                                                        <rect key="frame" x="0.0" y="158.66666666666669" width="313" height="145.66666666666669"/>
+                                                        <rect key="frame" x="0.0" y="186.66666666666669" width="313" height="117.66666666666669"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
@@ -90,10 +131,44 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Batman" id="qU8-Qi-Spc"/>
+                    <connections>
+                        <segue destination="aa9-h7-Eii" kind="show" identifier="detailSegue" id="LlC-IG-uqO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ggz-iC-msK">
+                    <connections>
+                        <action selector="didTapped:" destination="BYZ-38-t0r" id="gAr-Vp-tV6"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="NWl-c6-Cdz">
+                    <connections>
+                        <action selector="didTapped:" destination="BYZ-38-t0r" id="J4F-lZ-UZD"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="QZH-PR-uoS">
+                    <connections>
+                        <action selector="didTapped:" destination="BYZ-38-t0r" id="Lek-sY-DWt"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1057.2519083969464" y="-34.507042253521128"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="bJg-If-fe7">
+            <objects>
+                <viewController id="aa9-h7-Eii" customClass="DetailViewController" customModule="FictionalCharacterStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FTf-yG-DrS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="DkT-vM-3ey"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="isy-eO-VDO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KJ8-R0-nAV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1895" y="-35"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dwR-yc-29U">
