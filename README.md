@@ -10,16 +10,16 @@ Time spent: **3** hours spent in total
 
 The following **required** functionality is completed:
 
-[x] Users are able to see a customized app icon and launch screen  
-[x] Your app should work for any screen size and orientation using AutoLayout constraints  
-[x] Users are able to see at least 3 context items. 
-[x] Users are able to tap into each context item and see detail view  
-[x] Detail view contains information about each item (title, description, picture if applicable, etc.)  
+- [x] Users are able to see a customized app icon and launch screen  
+- [x] Your app should work for any screen size and orientation using AutoLayout constraints  
+- [x] Users are able to see at least 3 context items. 
+- [x] Users are able to tap into each context item and see detail view  
+- [x] Detail view contains information about each item (title, description, picture if applicable, etc.)  
  
 The following **optional** features are implemented:
 
-- [x] Improve and customize the user interface through styling and coloring
-- [x] Allow users to scroll when context items are off-screen (table view implemention)
+- [] Improve and customize the user interface through styling and coloring
+- [] Allow users to scroll when context items are off-screen (table view implemention)
 
 The following **additional** features are implemented:
 
