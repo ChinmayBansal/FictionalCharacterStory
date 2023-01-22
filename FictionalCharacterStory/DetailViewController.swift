@@ -8,14 +8,30 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    
+    
+    var batman: Batman?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        if let batman = batman {
+                print(batman.text)
+        }
+        
+        if let batman = batman {
+            // Configure the dinosaur image and dynamic labels
+            Image.image = batman.image
+            Text.text = batman.text
+            
+        }
     }
     
-
+    @IBOutlet weak var Image: UIImageView!
+    
+    @IBOutlet weak var Text: UILabel!
+    
     /*
     // MARK: - Navigation
 

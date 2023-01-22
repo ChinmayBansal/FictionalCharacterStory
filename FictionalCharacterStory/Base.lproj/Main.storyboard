@@ -64,7 +64,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="4Pk-Gm-cio">
                                                 <rect key="frame" x="16" y="16" width="313" height="304.33333333333331"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XxU-q4-Vmx">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XxU-q4-Vmx">
                                                         <rect key="frame" x="0.0" y="0.0" width="313" height="40.333333333333336"/>
                                                         <gestureRecognizers/>
                                                         <state key="normal" title="Button"/>
@@ -85,7 +85,7 @@
                                                             <outletCollection property="gestureRecognizers" destination="NWl-c6-Cdz" appends="YES" id="0Bp-fG-kpr"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HcA-UL-7t4">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HcA-UL-7t4">
                                                         <rect key="frame" x="0.0" y="93.333333333333314" width="313" height="40.333333333333343"/>
                                                         <gestureRecognizers/>
                                                         <state key="normal" title="Button"/>
@@ -161,14 +161,52 @@
                     <view key="view" contentMode="scaleToFill" id="FTf-yG-DrS">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="02A-kb-evd">
+                                <rect key="frame" x="16" y="59" width="361" height="683"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cfm-Op-fGE">
+                                        <rect key="frame" x="8" y="16" width="329" height="651"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="NJv-XR-aH1">
+                                                <rect key="frame" x="0.0" y="0.0" width="329" height="320.66666666666669"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOz-2F-8Td">
+                                                <rect key="frame" x="144" y="330.66666666666674" width="41.333333333333343" height="320.33333333333326"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="cfm-Op-fGE" secondAttribute="bottom" constant="16" id="F6P-DW-Ama"/>
+                                    <constraint firstItem="cfm-Op-fGE" firstAttribute="top" secondItem="02A-kb-evd" secondAttribute="top" constant="16" id="Z1K-pw-eEI"/>
+                                    <constraint firstAttribute="trailing" secondItem="cfm-Op-fGE" secondAttribute="trailing" constant="16" id="giW-dB-BhR"/>
+                                    <constraint firstItem="cfm-Op-fGE" firstAttribute="leading" secondItem="02A-kb-evd" secondAttribute="leading" constant="16" id="h2L-ht-GBy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="DkT-vM-3ey"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="DkT-vM-3ey" firstAttribute="bottom" secondItem="02A-kb-evd" secondAttribute="bottom" constant="16" id="34V-yG-a6d"/>
+                            <constraint firstItem="DkT-vM-3ey" firstAttribute="trailing" secondItem="02A-kb-evd" secondAttribute="trailing" constant="16" id="NwA-1m-kAL"/>
+                            <constraint firstItem="02A-kb-evd" firstAttribute="top" secondItem="DkT-vM-3ey" secondAttribute="top" constant="16" id="PYz-n2-Hfg"/>
+                            <constraint firstItem="02A-kb-evd" firstAttribute="leading" secondItem="DkT-vM-3ey" secondAttribute="leading" constant="16" id="TsI-Ae-4ah"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="isy-eO-VDO"/>
+                    <connections>
+                        <outlet property="Image" destination="NJv-XR-aH1" id="aPh-8U-er7"/>
+                        <outlet property="Text" destination="GOz-2F-8Td" id="cfG-6P-oMh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KJ8-R0-nAV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1895" y="-35"/>
+            <point key="canvasLocation" x="1893.8931297709923" y="-35.211267605633807"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dwR-yc-29U">
@@ -194,6 +232,9 @@
         <image name="ProfilePicture" width="400" height="226.66667175292969"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

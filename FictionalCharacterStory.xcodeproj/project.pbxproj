@@ -14,6 +14,7 @@
 		D38FA684297AE86B007CC566 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D38FA682297AE86B007CC566 /* Main.storyboard */; };
 		D38FA686297AE86C007CC566 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D38FA685297AE86C007CC566 /* Assets.xcassets */; };
 		D38FA689297AE86C007CC566 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D38FA687297AE86C007CC566 /* LaunchScreen.storyboard */; };
+		D3EF6011297C92B1004E2719 /* Batman.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EF6010297C92B1004E2719 /* Batman.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D38FA685297AE86C007CC566 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D38FA688297AE86C007CC566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D38FA68A297AE86C007CC566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3EF6010297C92B1004E2719 /* Batman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Batman.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				D38FA680297AE86B007CC566 /* ViewController.swift */,
 				D38FA682297AE86B007CC566 /* Main.storyboard */,
 				D312D085297B3FEE00CE48B1 /* DetailViewController.swift */,
+				D3EF6010297C92B1004E2719 /* Batman.swift */,
 				D38FA685297AE86C007CC566 /* Assets.xcassets */,
 				D38FA687297AE86C007CC566 /* LaunchScreen.storyboard */,
 				D38FA68A297AE86C007CC566 /* Info.plist */,
@@ -144,6 +147,7 @@
 				D38FA681297AE86B007CC566 /* ViewController.swift in Sources */,
 				D38FA67D297AE86B007CC566 /* AppDelegate.swift in Sources */,
 				D38FA67F297AE86B007CC566 /* SceneDelegate.swift in Sources */,
+				D3EF6011297C92B1004E2719 /* Batman.swift in Sources */,
 				D312D086297B3FEE00CE48B1 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
